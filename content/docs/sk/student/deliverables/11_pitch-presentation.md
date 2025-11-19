@@ -1,5 +1,4 @@
----
-id: ""
+id: "11-pitch-presentation"
 guid: ""
 dao: "knife"
 title: "🎤 Pitch Presentation"
@@ -8,7 +7,7 @@ category: "deliverable"
 type: "pitch-presentation"
 priority: ""
 tags: []
-slug: ""
+slug: "/student/deliverables/11-pitch-presentation"
 created: ""
 modified: ""
 status: "draft"
