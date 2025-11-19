@@ -1,6 +1,6 @@
 # DržKábel — poriadok na stole bez lepidla
 
-> Tento repozitár je súčasťou KNIFE/CAS ekosystému a slúži pre projekt DržKábel.
+> Tento repozitár je súčasťou KNIFE/CAS ekosystému a slúži pre projekt DržKábel
 
 ## O projekte
 DržKábel je praktický 3D tlačený držiak na káble, ktorý sa montuje priamo na hranu stola.  
