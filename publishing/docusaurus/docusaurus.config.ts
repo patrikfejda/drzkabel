@@ -88,8 +88,8 @@ const config: Config = {
 
           // Backward-compatible old paths
           { from: ['/index', '/home'], to: '/sk' },
-          { from: ['/knifes', '/sk/knifes'],  to: '/sk/knifes/overview' },
-          { from: ['/7Ds'],                 to: '/sk/7Ds' },
+          { from: ['/knifes', '/sk/knifes'],  to: '/sk/knifes' },
+          { from: ['/7Ds'],                   to: '/sk/student/7ds' },
         ],
         createRedirects(existingPath) {
           // normalize trailing slash variants
@@ -133,8 +133,8 @@ const config: Config = {
       logo: { alt: 'KNIFE Logo', src: 'img/logo.png', href: '/sk' },
       items: [
         { to: '/sk', label: 'Home', position: 'left' },
-        { to: '/sk/knifes/overview', label: 'KNIFES', position: 'left' },
-        { to: '/sk/7Ds', label: '7Ds', position: 'left' },
+        { to: '/sk/knifes', label: 'KNIFES', position: 'left' },
+        { to: '/sk/student/7ds', label: '7Ds', position: 'left' },
         { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
       ],
     },
