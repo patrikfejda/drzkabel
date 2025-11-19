@@ -1,4 +1,4 @@
-name: Deploy Docusaurus → gh-pages-docusaurus
+name: Deploy Docusaurus → gh-pages
 
 on:
   push:
@@ -27,15 +27,17 @@ jobs:
 
       - name: Build Docusaurus
         run: npm run build
+        env:
+          SITE_URL: https://patrikfejda.github.io
+          BASE_URL: /drzkabel/
         working-directory: publishing/docusaurus
 
-      - name: Deploy to gh-pages-docusaurus/docs
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}     # <<< toto chýbalo
-          publish_branch: gh-pages-docusaurus
+          publish_branch: gh-pages
           publish_dir: publishing/docusaurus/build
-          destination_dir: docs                         # Pages má v nastavení /docs
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           # force_orphan: true  # iba pri úplne prvom nasadení tejto vetvy

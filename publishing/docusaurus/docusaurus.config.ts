@@ -15,14 +15,14 @@ const appVersion = process.env.APP_VERSION || '20251012-2333';
 const config: Config = {
   title: 'KNIFE Preview - Knowledge in Friendly Examples',   // ✅ povinné
   tagline: 'Context Aware Approach',
-  url: process.env.SITE_URL || 'https://knifes.systemthinking.sk', // can be overridden in CI/local
-  baseUrl: process.env.BASE_URL || '/',                              // can be overridden in CI/local
+  url: process.env.SITE_URL || 'https://patrikfejda.github.io', // GitHub Pages user/org URL
+  baseUrl: process.env.BASE_URL || '/drzkabel/',                 // Project Pages base path
   trailingSlash: false,
   favicon: 'img/favicon.ico',
 
-  organizationName: 'KNIFE-Framework',
-  projectName: 'knifes_overview',
-  deploymentBranch: 'gh-pages-docusaurus',
+  organizationName: 'patrikfejda',
+  projectName: 'drzkabel',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: brokenPolicy,
   onBrokenAnchors: brokenPolicy,
@@ -129,13 +129,13 @@ const config: Config = {
   themeConfig: {
     image: 'img/logo.png',
     navbar: {
-      title: 'KNIFE-Home',
-      logo: { alt: 'KNIFE Logo', src: 'img/logo.png', href: '/sk' },
+      title: 'DržKábel',
+      logo: { alt: 'DržKábel', src: 'img/logo.png' },
       items: [
         { to: '/sk', label: 'Home', position: 'left' },
         { to: '/sk/knifes', label: 'KNIFES', position: 'left' },
         { to: '/sk/student/7ds', label: '7Ds', position: 'left' },
-        { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
+        { href: 'https://github.com/patrikfejda/drzkabel', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
