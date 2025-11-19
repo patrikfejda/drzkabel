@@ -83,8 +83,8 @@ const config: Config = {
         redirects: [
           // Avoid broken root redirect: default locale (sk) lives at root
           { from: '/en/index', to: '/en' },
-          // Keep legacy '/sk/index' working by pointing to root (default locale is at '/')
-          { from: '/sk/index', to: '/' },
+          // Keep legacy '/sk/index' working by pointing to '/sk'
+          { from: '/sk/index', to: '/sk' },
 
           // Backward-compatible old paths
           { from: ['/index', '/home'], to: '/sk' },
