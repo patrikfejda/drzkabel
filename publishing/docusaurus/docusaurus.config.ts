@@ -81,10 +81,10 @@ const config: Config = {
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [
-          // Root & locale root fixes
-          { from: '/',        to: '/sk' },
+          // Avoid broken root redirect: default locale (sk) lives at root
           { from: '/en/index', to: '/en' },
-          { from: '/sk/index', to: '/sk' },
+          // Keep legacy '/sk/index' working by pointing to root (default locale is at '/')
+          { from: '/sk/index', to: '/' },
 
           // Backward-compatible old paths
           { from: ['/index', '/home'], to: '/sk' },
