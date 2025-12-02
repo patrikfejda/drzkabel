@@ -18,10 +18,6 @@ Stručný priebeh:
 
 ![Activity diagram](/img/app/diagram-activity.png)
 
-:::note
-Obrázok nahráš do `publishing/docusaurus/static/img/app/` ako `diagram-activity.png`.
-:::
-
 ---
 **Navigation:** [⬆️ Up](../index.md) · [🏠 Home](/sk)
 
